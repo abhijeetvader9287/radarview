@@ -1,70 +1,40 @@
+#
+# Build configuration for Circle CI
+#
+
 general:
     artifacts:
-       - /home/ubuntu/radarview/app/build/outputs/apk/
+        - /home/ubuntu/radarview/app/build/outputs/apk/
 
 machine:
-	environment:
-		ANDROID_HOME: /home/ubuntu/android
-    java:
-        version: oraclejdk6
+    environment:
+        ANDROID_HOME: /usr/local/android-sdk-linux
 
 dependencies:
-	cache_directories:
-		- ~/.android
-        - ~/android
+    pre:
+        - wget "https://services.gradle.org/distributions/gradle-2.13-bin.zip"; unzip gradle-2.13-bin.zip
+        - source environmentSetup.sh && copyEnvVarsToGradleProperties
     override:
-	    - (echo "Downloading Android SDK v19 now!")
-	    - (source scripts/environmentSetup.sh && getAndroidSDK)
+        - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-25.0.2,android-25,extra-google-m2repository,extra-google-google_play_services,extra-android-m2repository
+        - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
 
 test:
-    pre:
-	    - $ANDROID_HOME/tools/emulator -avd testAVD -no-skin -no-audio -no-window:
-			background: true
-		- (./gradlew assembleDebug):
-			timeout: 1200
-		- (./gradlew assembleDebugTest):
-			timeout: 1200
-		- (source scripts/environmentSetup.sh && waitForAVD)
-
-                - wget "https://services.gradle.org/distributions/gradle-2.13-bin.zip"; unzip gradle-2.13-bin.zip
-                - source environmentSetup.sh && copyEnvVarsToGradleProperties
-            override:
-                - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-25.0.2,android-
-        25,extra-google-m2repository,extra-google-google_play_services,extra-android-m2repository
-                - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
     override:
-	    - (echo "Running JUnit tests!")
-		- (./gradlew connectedAndroidTest)
-
-
-#!/bin/bash
-
-# Fix the CircleCI path
-function getAndroidSDK(){
-  export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH"
-
-  DEPS="$ANDROID_HOME/installed-dependencies"
-
-  if [ ! -e $DEPS ]; then
-    cp -r /usr/local/android-sdk-linux $ANDROID_HOME &&
-    echo y | android update sdk -u -a -t android-25 &&
-    echo y | android update sdk -u -a -t platform-tools &&
-    echo y | android update sdk -u -a -t build-tools-25.0.2 &&
-    echo y | android update sdk -u -a -t sys-img-x86-android-25 &&
-    #echo y | android update sdk -u -a -t addon-google_apis-google-18 &&
-    echo no | android create avd -n testAVD -f -t android-19 --abi default/x86 &&
-    touch $DEPS
-  fi
-}
-
-function waitForAVD {
-    (
-    local bootanim=""
-    export PATH=$(dirname $(dirname $(which android)))/platform-tools:$PATH
-    until [[ "$bootanim" =~ "stopped" ]]; do
-        sleep 5
-        bootanim=$(adb -e shell getprop init.svc.bootanim 2>&1)
-        echo "emulator status=$bootanim"
-    done
-    )
-}
+        # start the build
+        - (./gradlew assemble):
+            timeout: 360
+        # start the emulator
+        - emulator -avd circleci-android22 -no-audio -no-window:
+            background: true
+            parallel: true
+        # wait for it to have booted
+        - circle-android wait-for-boot
+        # unlock the emulator screen
+        - sleep 30
+        - adb shell input keyevent 82
+        # run tests  against the emulator.
+        - ./gradlew connectedDevelopmentDebugAndroidTest -PdisablePreDex
+        # copy the build outputs to artifacts
+        - cp -r app/build/outputs $CIRCLE_ARTIFACTS
+        # copy the test results to the test results directory.
+        - cp -r app/build/outputs/androidTest-results/* $CIRCLE_TEST_REPORTS
