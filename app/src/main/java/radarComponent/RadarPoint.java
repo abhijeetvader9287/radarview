@@ -28,4 +28,14 @@ public class RadarPoint {
         this.x = x;
         this.y = y;
     }
+    public String getIdentifier()
+    {
+        return   this.identifier;
+    }
+    public float getX() {
+        return this.x;
+    }
+    public float getY() {
+        return this.y;
+    }
 }

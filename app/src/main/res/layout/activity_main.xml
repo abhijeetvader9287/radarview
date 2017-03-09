@@ -20,9 +20,22 @@
     whatever:center_pin_color="@color/colorAccent"
 
     whatever:radar_image="@drawable/radar_background"
-    whatever:pins_image="@drawable/pin"
+    whatever:pins_image="@drawable/user"
     whatever:center_pin_image="@drawable/center_pin"
 
     whatever:max_distance="-1"
         />
+
+    <SeekBar
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="3"
+        android:layout_alignParentBottom="true"
+
+
+        android:id="@+id/seekBar2"/>
+
+
 </RelativeLayout>
