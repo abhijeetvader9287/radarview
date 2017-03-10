@@ -3,111 +3,93 @@
 
     <item
         is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_9a44d660aa71efb0b4c92cd88b3be90921ce1300.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cf6f4ec34c2036f491b589df4bd5df7e3b4a18ff">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\instant-run_db6b9b439a2235572c6174096ebf27670eb313f1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_e562db223142734ef55c769320500e796c405978.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_fe585b51168c4124fd9454827ad60fc718f3e263.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_fbb632775eb1edd38e9f39c7159fee09776d4ab3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Admin\.android\build-cache\fe34075d13ed0bcded0cdfbb83db14e701f2864c\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_49a309cf8c38a57703eb90c28afd37388c028c1e.jar" />
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_6e5dcccebf377088f22bf5271cac7f6ec56b1945.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\Admin\.android\build-cache\c70f6844e3a6ce8b3fe7411e2eae7ef3f8b5fa65\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_33044c3c66c0a33c21a2c86ef8e3c4771a1601e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\dc079f03da91141fab15848115616f1621d04f77\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_fc20f1b3f9b53540913ecb9159d3029bc8eaae90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\a9817cdf34e9156d859d3785f7910d6581b9b0a0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_b8184e897f4731c935901bda0c3e71adbc15f929.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\8559e54879095f7f093d08a71313719e2ed1e9d2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_d2233bda857469e736325427e7b123d619b54c5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\dab295c6df455e02776d3f89a80644b7ec3587f6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_bfb1f6fe75e423ba164c5d528afeb253886fc01c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\896f0f21c382c9e353966600632a295231607d9a\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_66ed94dc7b893e2ca02ca9ee428dbc6357a45267.jar" />
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_4e0061658b59a7e9a5e98427ebfe68b1ce80e05d.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        jar="C:\Users\Admin\.android\build-cache\f9f40bef5eab3499cb4243efb6d6604443d67c83\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="fbc5a198999b75541c3b602af15db9a0870234bf">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_74e71b065cad100702c10cd240dd0a3c4e1b6cae.jar" />
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_757663308f716ba01167a210432e90aadb12a343.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Admin\.android\build-cache\67ffe7b6311f6a91acab66a984b7dbd474e3d079\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\classes_68f0c7298cf5fd15c1044995b1d950ffef67a697.jar" />
     </item>
     <item
         is-multidex="false"
         jar="C:\Users\Admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
         <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_942327b5265c1a8203570c2dbc750361f37f82eb.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_88a104933b042049727897ea595cbc46c7eaf5ac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_38166e5ea578adb7fb68af38212c4f70985e94bf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="D:\abhijeet\android examples\RadarView\Archive\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_21ccba8c5c8eb30e642cc9c067619b99749ae6a0.jar" />
     </item>
 
 </items>
